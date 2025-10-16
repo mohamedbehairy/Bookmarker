@@ -1,0 +1,6 @@
+.subtitle {
+  font-family: "Righteous", cursive;
+  background-image: linear-gradient(to right, #008829, #ff9100);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

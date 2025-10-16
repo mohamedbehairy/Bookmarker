@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #faebd7 0%, #f5e8d3 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+}
+
+/* Header Styles */
+.header-section {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subtitle {
+  font-family: "Righteous", cursive;
+  background-image: linear-gradient(to right, #008829, #ff9100);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #c00000;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(201, 76, 62, 0.2);
+  position: relative;
+  display: inline-block;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #c94c3e, transparent);
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #6c757d;
+  font-weight: 400;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.subtitle i {
+  color: #c94c3e;
+  font-size: 1.5rem;
+}
+
+/* Card Form Section */
+.form-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group-text {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-right: none;
+  color: #c94c3e;
+  font-size: 1.1rem;
+  padding: 12px 15px;
+}
+
+.form-control {
+  border: 2px solid #e9ecef;
+  border-left: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #c94c3e;
+  box-shadow: 0 0 0 0.2rem rgba(201, 76, 62, 0.15);
+}
+
+.input-group-text + .form-control:focus {
+  border-left: none;
+}
+
+.btn-submit {
+  background: #c94c3e;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(201, 76, 62, 0.3);
+}
+
+.btn-submit:hover {
+  background: #b33c2e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(201, 76, 62, 0.4);
+}
+
+/* Divider */
+.divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c94c3e, transparent);
+  margin: 50px 0;
+}
+
+/* Table Section */
+.table-card {
+  background: #fef9f5;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: #fef9f5;
+  border: none;
+  padding: 15px;
+  letter-spacing: 0.5px;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table tbody tr:hover {
+  background-color: #fef9f5;
+  transform: scale(1.01);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.table tbody td {
+  padding: 18px;
+  vertical-align: middle;
+  color: #495057;
+  font-weight: 500;
+}
+
+.btn-visit {
+  background: #28a745;
+  color: white;
+  border: none;
+  /* padding: 8px 25px; */
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-visit:hover {
+  color: rgb(213, 255, 207);
+  background: #218838;
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  /* padding: 8px 20px; */
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-delete:hover {
+  color: rgb(255, 218, 218);
+  background: #c82333;
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgba(220, 53, 69, 0.3);
+}
+
+.index-badge {
+  background: rgb(223, 223, 223);
+  color: #c94c3e;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  display: inline-block;
+}

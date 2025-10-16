@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmarker</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header-section">
+        <h1 class="main-title">Bookmarker</h1>
+        <p class="subtitle">
+          <i class="fas fa-bookmark"></i>
+          <span>Bookmark your favorite sites</span>
+          <i class="fas fa-bookmark"></i>
+        </p>
+      </div>
+      <!-- Form Card -->
+      <div class="form-card">
+        <form>
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-save"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              id="siteName"
+              placeholder="Bookmark Name"
+              aria-label="Bookmark Name"
+            />
+          </div>
+
+          <div class="input-group mb-4">
+            <span class="input-group-text">
+              <i class="fas fa-link"></i>
+            </span>
+            <input
+              type="url"
+              class="form-control"
+              id="siteUrl"
+              placeholder="Website URL"
+              aria-label="Website URL"
+            />
+          </div>
+          <button type="button" class="btn btn-submit" onclick="addSite()">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <!-- Divider -->
+      <hr class="divider" />
+
+      <!-- Table Card -->
+      <div class="table-card">
+        <div class="table-responsive overflow-hidden">
+          <table class="table text-center">
+            <thead>
+              <tr class="">
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table-row">
+              <!--
+               <tr>
+                <td><span class="index-badge">${i + 1}</span></td>
+                <td>${arr[i].name}</td>
+                <td>
+                  <a
+                    href="${arr[i].url}"
+                    target="_blank"
+                    class="btn btn-visit text-decoration-none text-white"
+                  >
+                    <i class="fas fa-eye pe-1"></i> Visit
+                  </a>
+                </td>
+
+                <td>
+                  <button class="btn btn-delete" onclick="deleteSite(${i})">
+                    <i class="fas fa-trash pe-1"></i> Delete
+                  </button>
+                </td>
+              </tr> 
+              -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="java/bootstrap.bundle.min.js"></script>
+    <script src="java/script.js"></script>
+  </body>
+</html>
